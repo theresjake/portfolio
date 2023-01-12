@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans+Semi+Condensed:wght@800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'consolas';
+	color: ##d5d5d5;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #d5d5d5;
+}
+
+#bg-container {
+	position: fixed;
+	z-index: -1;
+	object-fit: cover;
+}
+
+header {
+	display: flex;
+	background-image: linear-gradient(0deg, #2A0A70,  #2A0AA7,   #5A3AD7,  #2A0AA7,#2A0A70);
+	padding: 4vh 8vh;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.dev {
+	height: 400px;
+	box-shadow: 0 0 12px 8px #E6B327;
+	animation-name: bubble;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+h1 {
+	font-size: 10vh;
+}
+
+nav {
+	background-image: linear-gradient(0deg, #201848, #2A0A70);
+	padding: 10px 20px;
+	position: sticky;
+}
+
+nav ul {
+	display: inline-flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	list-style: none;
+}
+
+.section-container {
+	background-color: #4447;
+	padding: 25px;
+	backdrop-filter: blur( 7.5px );
+	-webkit-backdrop-filter: blur( 7.5px );
+	margin: 60px;
+}
+
+@keyframes bubble {
+	0% {
+		border-radius: 540px 570px 630px 670px;}
+	20% {
+		border-radius: 670px 540px 570px 630px;}
+	40% {
+		border-radius: 630px 670px 540px 570px;}
+	80% {
+		border-radius: 570px 630px 670px 540px;}
+	100% {
+		border-radius: 540px 570px 630px 670px;}
+}
